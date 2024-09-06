@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: #F4F7FC;
+    color: #333;
+}
+
+.spinner-wrapper{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-border{
+    height: 60px;
+    width: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1350px;
+}
+
+
+.heading {
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );    
+    transform: skew(-25deg);
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .heading-content {
+    transform: skew(25deg);
+    margin-top: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #633D88;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+.menu {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0.5rem;
+    /* background-color: #3a248e; */
+    background-image: radial-gradient( circle 874px at 9.8% 8%,  rgb(215, 8, 146) 0%, rgba(22,22,22,1) 58.4% );
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    /* background-color: #115573; */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    gap: 1.5rem;
+}
+
+.store-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.store-item:hover {
+    transform: translateY(-5px);
+}
+
+.store-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .store-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .menu a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .store-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .heading {
+        width: 90%;
+        height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .heading {
+      width: 95%;
+      height: 45px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+
+
+
+
+/* Privew Box css */ 
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Modal Content (the image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

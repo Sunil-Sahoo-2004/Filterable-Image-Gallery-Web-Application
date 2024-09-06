@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filterable Image Gallery</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading">
+        <h2 class="heading-content">Filterable Gallery</h2>
+      </div>
+      <div class="menu">
+        <a href="#" class="btn" data-filter="all">All</a>
+        <a href="#" class="btn" data-filter="logo">Logo Design</a>
+        <a href="#" class="btn" data-filter="web">Web Design</a>
+        <a href="#" class="btn" data-filter="mobile">Mobile Design</a>
+      </div>
+      <div class="box" id="store-items">
+        <div class="store-item web">
+          <img src="/img/web1.jpg" alt="Web1" class="store-img" />
+        </div>
+
+        <div class="store-item logo">
+          <img src="/img/logo1.jpg" alt="logo1" class="store-img" />
+        </div>
+
+        <div class="store-item mobile">
+          <img src="/img/mobile1.jpg" alt="mobile1" class="store-img" />
+        </div>
+
+        <div class="store-item web">
+          <img src="/img/web2.jpg" alt="Web2" class="store-img" />
+        </div>
+
+        <div class="store-item logo">
+          <img src="/img/logo2.jpg" alt="logo2" class="store-img" />
+        </div>
+
+        <div class="store-item mobile">
+          <img src="/img/mobile2.jpg" alt="mobile2" class="store-img" />
+        </div>
+
+        <div class="store-item web">
+          <img src="/img/web3.jpg" alt="Web3" class="store-img" />
+        </div>
+
+        <div class="store-item logo">
+          <img src="/img/logo3.jpg" alt="logo3" class="store-img" />
+        </div>
+
+        <div class="store-item mobile">
+          <img src="/img/mobile3.jpg" alt="mobile3" class="store-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Image View Box Modal -->
+    <div id="imageViewBox" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="viewedImage">
+      <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
